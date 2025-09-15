@@ -5,28 +5,28 @@ The projects in this suite cover multiple domains: environmental sustainability,
 
 1. **Air Quality Index (AQI) Forecasting:**
 This project utilizes multi-year AQI data sourced from the Central Pollution Control Board (CPCB) and public repositories to monitor and forecast urban air pollution across Indian cities. Data preprocessing tackles missing values through forward-fill and mean imputation, followed by time-series standardization. Two forecasting models, ARIMA and Facebook Prophet, are applied to capture linear trends and seasonal patterns. Performance is evaluated using Mean Absolute Error (MAE), enabling identification of pollution hotspots and critical time periods for targeted interventions.
-    * Dataset: Multi-year Indian AQI data from CPCB and public sources.
+    * Dataset: Multi-year Indian AQI data from CPCB and public sources. Link to dataset: https://www.kaggle.com/datasets/rohanrao/air-quality-data-in-india
     * Preprocessing: Missing value imputation (forward-fill, mean), time-series formatting.
     * Models: ARIMA and Facebook Prophet for forecasting city-wise AQI.
     * Evaluation: Mean Absolute Error (MAE) comparison.
 
 2. **Credit Card Fraud Detection:**
 Addressing one of the most challenging problems in financial security, this project leverages anonymized transaction data with significant class imbalance. The Synthetic Minority Oversampling Technique (SMOTE) is applied to balance the dataset. Multiple models—Logistic Regression, Random Forest, and XGBoost—are trained and compared using precision, recall, F1-score, and ROC AUC metrics. Dimensionality reduction (PCA and t-SNE) techniques offer further interpretability of fraud patterns.
-    * Dataset: Kaggle credit card transaction data with severe class imbalance.
+    * Dataset: Kaggle credit card transaction data with severe class imbalance. Dataset Link: https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud
     * Preprocessing: StandardScaler, SMOTE for oversampling minority class.
     * Models: Logistic Regression, Random Forest, XGBoost.
     * Evaluation: Precision, recall, F1-score, ROC-AUC, PCA and t-SNE visualizations.
 
 3. **Hate Speech Detection:**
 A natural language processing pipeline classifies Twitter content to distinguish hate speech from non-hate speech. Text preprocessing involves cleaning, tokenization, and TF-IDF vectorization. SMOTE addresses class imbalance to improve detection fairness. Logistic Regression is used for classification, with evaluation through accuracy, confusion matrices, and classification reports.
-    * Dataset: Twitter tweets labeled for hate speech and offensive language.
+    * Dataset: Twitter tweets labeled for hate speech and offensive language. Link for Dataset: https://www.kaggle.com/datasets/mrmorj/hate-speech-and-offensive-language-dataset
     * Preprocessing: Text cleaning, TF-IDF vectorization, SMOTE balancing.
     * Model: Logistic Regression.
     * Evaluation: Accuracy, confusion matrix, classification report.
 
 4. **News Article Classification:**
 Using the BBC News dataset, this project demonstrates multi-class text classification. Text is preprocessed with lemmatization and stopword removal, followed by TF-IDF feature extraction. Models including Naive Bayes, Logistic Regression, and Support Vector Machine (SVM) are trained and evaluated with metrics covering accuracy, precision, recall, and F1-score.
-    * Dataset: BBC News articles with category labels.
+    * Dataset: BBC News articles with category labels. Dataset Link: https://www.kaggle.com/datasets/jacopoferretti/bbc-articles-dataset
     * Preprocessing: Text normalization, lemmatization, stopword removal, TF-IDF.
     * Models: Naive Bayes, Logistic Regression, SVM.
     * Evaluation: Accuracy, precision, recall, F1-score, confusion matrix.
